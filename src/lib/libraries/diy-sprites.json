@@ -1,0 +1,39 @@
+[
+    {
+        "name": "Mabot",
+        "md5": "60f720956ab1840431dcf0616ce98f14.png",
+        "type": "sprite",
+        "tags": [
+            "people",
+            "dance"
+        ],
+        "info": [
+            0,
+            1,
+            1
+        ],
+        "json": {
+            "objName": "Mabot",
+            "sounds": [],
+            "costumes": [
+                {
+                    "costumeName": "Mabot",
+                    "baseLayerID": -1,
+                    "baseLayerMD5": "60f720956ab1840431dcf0616ce98f14.png",
+                    "bitmapResolution": 2,
+                    "rotationCenterX": 174,
+                    "rotationCenterY": 162
+                }
+            ],
+            "currentCostumeIndex": 0,
+            "scratchX": -79,
+            "scratchY": 11,
+            "scale": 1,
+            "direction": 90,
+            "rotationStyle": "normal",
+            "isDraggable": false,
+            "visible": true,
+            "spriteInfo": {}
+        }
+    }
+]
