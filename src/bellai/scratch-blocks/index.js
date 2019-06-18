@@ -9,6 +9,7 @@
 import bellTouch from './core/touch';
 import bellTouchGesture from './core/touch-gesture';
 import bellWorkSpaceSvg from './core/workspace-svg';
+import Lua from './core/lua';
 //diy blockly
 import blocksBellDetect from './blocks/bell-detect';
 import blocksBellEvent from './blocks/bell-event';
@@ -42,6 +43,9 @@ import coreSpeedDialog from './core/field-speed-dialog';
 
 import en from '../static/msg/en';
 
+// lua脚本
+import lua_event from './generators/bell_event';
+
 export default (Blockly) => {
 
   Blockly.sayHello = function () {
@@ -51,6 +55,7 @@ export default (Blockly) => {
   bellTouch(Blockly);
   bellTouchGesture(Blockly);
   bellWorkSpaceSvg(Blockly);
+  Lua(Blockly);
   // 自定义弹框
   coreBlocklyRenderSvgVertical(Blockly);
   coreDialogDiv(Blockly);
@@ -74,6 +79,9 @@ export default (Blockly) => {
   // blocksDefaultToolBox(Blockly);
   // messages
   en(Blockly);
+
+  // lua script
+  lua_event(Blockly);
 
   global.ScratchBlocks = Blockly;
 };
