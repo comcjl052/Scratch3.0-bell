@@ -6,6 +6,7 @@
 // 2.替换workspacesvg中使用的Gesture -> TouchGesture
 // 3.用blockly中的Blockly.bindEvent_,Blockly.bindEventWithChecks_,Blockly.unbindEvent_
 //   替换掉scratch-blocks中的
+// import bellGenerator from './core/generator';
 import bellTouch from './core/touch';
 import bellTouchGesture from './core/touch-gesture';
 import bellWorkSpaceSvg from './core/workspace-svg';
@@ -52,6 +53,7 @@ export default (Blockly) => {
     console.log('Hello from scratch-blocks customizing!');
   };
   // 支持移动端手势
+  // bellGenerator(Blockly);
   bellTouch(Blockly);
   bellTouchGesture(Blockly);
   bellWorkSpaceSvg(Blockly);
@@ -79,7 +81,6 @@ export default (Blockly) => {
   // blocksDefaultToolBox(Blockly);
   // messages
   en(Blockly);
-
   // lua script
   lua_event(Blockly);
 

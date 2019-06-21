@@ -63,6 +63,7 @@
     "gh-pages": "github:rschamp/gh-pages#publish-branch-to-subfolder",
     "html-webpack-plugin": "^3.2.0",
     "immutable": "3.8.2",
+    "imports-loader": "^0.8.0",
     "intl": "1.2.5",
     "is-mobile": "^2.0.1",
     "jest": "^21.0.0",

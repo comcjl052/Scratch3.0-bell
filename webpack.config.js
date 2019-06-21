@@ -126,6 +126,11 @@ module.exports = [
                     options: {
                         outputPath: 'static/assets/'
                     }
+                },
+                {
+                    // test: require.resolve("scratch-blocks"),
+                    test: /[\/\\]node_modules[\/\\]scratch-blocks$/,
+                    use: "imports-loader?define=>false"
                 }
             ])
         },
